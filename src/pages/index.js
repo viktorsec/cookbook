@@ -21,13 +21,17 @@ export default ({ data }) => {
       <img src="https://source.unsplash.com/random/400x200" alt="" />
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
-          <h3>
-            {node.frontmatter.title}{" "}
-            <span>
-              — {node.frontmatter.date}
-            </span>
-          </h3>
-          <p>{node.excerpt}</p>
+          <Link
+            to={node.fields.slug}
+          >
+            <h3>
+              {node.frontmatter.title}{" "}
+              <span>
+                — {node.frontmatter.date}
+              </span>
+            </h3>
+            <p>{node.excerpt}</p>
+          </Link>
         </div>
       ))}
       <p>Total files: {data.allMarkdownRemark.totalCount}</p>
@@ -45,6 +49,9 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
           }
           excerpt
         }
