@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -16,7 +17,7 @@ export default ({ data }) => {
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
+        <Image filename="gatsby-astronaut.png" />
       </div>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
@@ -29,6 +30,10 @@ export default ({ data }) => {
                 — {node.frontmatter.date}
               </span>
             </h3>
+            <Img
+              fluid={node.frontmatter.image.childImageSharp.fluid}
+              alt={node.frontmatter.title}
+            />
             <p>{node.excerpt}</p>
           </Link>
         </div>
@@ -48,6 +53,13 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            image {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           fields {
             slug

@@ -1,6 +1,7 @@
 ---
 title: "Šaltibarščiai"
 date: "2020-04-26"
+image: ../images/borsc.jpg
 ---
 
 S touto obdobou Boršču som sa zoznámil v Pobaltí.
