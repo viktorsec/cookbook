@@ -39,7 +39,9 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>,
           {` `}
-          <a href="https://github.com/viktorsec/cookbook">GitHub</a>
+          <a href="https://github.com/viktorsec/cookbook">GitHub</a>,
+          {` `}
+          <a href="https://zeit.co/">Deployed by ZEIT</a>
         </footer>
       </div>
     </>

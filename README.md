@@ -1,6 +1,19 @@
 # Cookbook
 
-Requires Node 10. Built on top of [Gatsby Hello World](https://github.com/gatsbyjs/gatsby-starter-hello-world) boilerplate.
+Personal cookbook.
 
-`yarn develop`
-`yarn build`
+## Development
+
+1. `nvm use 10`
+2. `npm install -g gatsby-cli`
+3. clone this repo && `cd cookbook`
+4. `yarn`
+5. `yarn develop`
+
+## Deployment
+
+New changes on `master` will automatically get deployed by Zeit on [cookbook.yregyorulis.now.sh](cookbook.yregyorulis.now.sh).
+
+## Colophon
+
+Built on top of [Gatsby Starter Hello World](https://github.com/gatsbyjs/gatsby-starter-hello-world) boilerplate.
