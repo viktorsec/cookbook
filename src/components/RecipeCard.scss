@@ -1,0 +1,22 @@
+.recipecard-container {
+  margin: 2rem;
+  //border: 2px solid greenyellow;
+  width: 20rem;
+  height: 25rem;
+  text-overflow: ellipsis;
+
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .title {
+    color: #fffffe;
+    text-decoration: none;
+  }
+
+  .text {
+    padding-top: 1rem;
+    color: #94a1b2;
+  }
+}
