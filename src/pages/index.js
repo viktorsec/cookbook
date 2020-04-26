@@ -18,7 +18,6 @@ export default ({ data }) => {
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
       </div>
-      <img src="https://source.unsplash.com/random/400x200" alt="" />
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <Link
@@ -34,7 +33,7 @@ export default ({ data }) => {
           </Link>
         </div>
       ))}
-      <p>Total files: {data.allMarkdownRemark.totalCount}</p>
+      <p>Total recipes: {data.allMarkdownRemark.totalCount}</p>
     </Layout>
   )
 }
