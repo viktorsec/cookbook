@@ -5,6 +5,8 @@ import Layout from "../components/Layout"
 import RecipeCard from "../components/RecipeCard"
 import SEO from "../components/Seo"
 
+import "./index.scss"
+
 
 export default ({ data }) => {
   console.log(data)
@@ -12,15 +14,17 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <RecipeCard
-          id={node.id}
-          slug={node.fields.slug}
-          title={node.frontmatter.title}
-          image={node.frontmatter.image}
-          excerpt={node.excerpt}
-        />
-      ))}
+      <div class="index-container">
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <RecipeCard
+            id={node.id}
+            slug={node.fields.slug}
+            title={node.frontmatter.title}
+            image={node.frontmatter.image}
+            excerpt={node.excerpt}
+          />
+        ))}
+      </div>
     </Layout>
   )
 }

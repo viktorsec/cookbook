@@ -1,9 +1,19 @@
+@import "../sass/constants.scss";
+
 .recipecard-container {
+  background-color: $color-primary-medium;
+  //border-radius: 12px;
   margin: 2rem;
+  padding: 1rem 0;
   //border: 2px solid greenyellow;
   width: 20rem;
   height: 25rem;
   text-overflow: ellipsis;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 0 2rem -1rem $color-primary-medium;
+  }
 
   .link {
     color: white;
@@ -11,12 +21,13 @@
   }
 
   .title {
-    color: #fffffe;
+    padding: 0 1rem;
+    color: $color-secondary-dark;
     text-decoration: none;
   }
 
   .text {
-    padding-top: 1rem;
-    color: #94a1b2;
+    padding: 1rem;
+    color: $color-text;
   }
 }

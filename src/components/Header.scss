@@ -1,6 +1,13 @@
+@import "../sass/constants.scss";
+
 .header {
-  background: rebeccapurple;
+  background: $color-primary-light;
+  box-shadow: 0 0 5rem -1rem $color-primary-light;
   margin-bottom: 1.45rem;
+
+  &:hover {
+    box-shadow: none;
+  }
 
   .container {
     margin: 0 auto;
@@ -12,7 +19,7 @@
     }
 
     .link {
-      color: white;
+      color: $color-text;
       text-decoration: none;
     }
   }
