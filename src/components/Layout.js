@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
           {` `}
           tracked on <a href="https://github.com/viktorsec/cookbook">GitHub</a>,
           {` `}
-          deployed by <a href="https://zeit.co/">ZEIT</a>
+          deployed by <a href="https://zeit.co/">ZEIT</a>.
         </footer>
       </div>
     </>

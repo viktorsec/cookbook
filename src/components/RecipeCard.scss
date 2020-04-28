@@ -1,15 +1,15 @@
 @import "../sass/constants.scss";
+@import "../sass/typography.scss";
 
 .recipecard-container {
   background-color: $color-primary-medium;
-  //border-radius: 12px;
   margin: 2rem;
-  padding: 1rem 0;
-  //border: 2px solid greenyellow;
+  min-width: 15rem;
   width: 20rem;
   height: 25rem;
   text-overflow: ellipsis;
   overflow: hidden;
+  position: relative;
 
   &:hover {
     box-shadow: 0 0 2rem -1rem $color-primary-medium;
@@ -20,14 +20,46 @@
     text-decoration: none;
   }
 
-  .title {
-    padding: 0 1rem;
-    color: $color-secondary-dark;
-    text-decoration: none;
+  .image {
+    height: 100%;
   }
 
-  .text {
-    padding: 1rem;
-    color: $color-text;
+  .hoverContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    .hoverBody {
+      //border: 2px solid gold;
+      top: auto;
+      bottom: auto;
+      color: black;
+
+      .title {
+        //color: $color-secondary-dark;
+        text-align: center;
+        font-family: $font-oswald, sans-serif;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+      }
+
+      .text {
+        display: none;
+        padding: 0 1rem;
+        font-size: 1rem;
+        //color: $color-text;
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+    }
   }
+
 }

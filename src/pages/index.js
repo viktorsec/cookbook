@@ -14,7 +14,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div class="index-container">
+      <ul class="index-container">
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <RecipeCard
             id={node.id}
@@ -24,7 +24,7 @@ export default ({ data }) => {
             excerpt={node.excerpt}
           />
         ))}
-      </div>
+      </ul>
     </Layout>
   )
 }

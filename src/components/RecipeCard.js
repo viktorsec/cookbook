@@ -6,21 +6,26 @@ import PropTypes from "prop-types"
 import "./RecipeCard.scss"
 
 const RecipeCard = ({ id, slug, title, image, excerpt }) => (
-  <div key={id} class="recipecard-container">
+  <li key={id} class="recipecard-container">
     <Link
       to={slug}
       className="link"
     >
-      <h3 class="title">
-        {title}
-      </h3>
       <Img
         fluid={image.childImageSharp.fluid}
         alt={title}
+        className="image"
       />
-      <p class="text">{excerpt}</p>
+      <div className="hoverContainer">
+        <div className="hoverBody">
+          <h2 class="title">
+            {title}
+          </h2>
+          <p class="text">{excerpt}</p>
+        </div>
+      </div>
     </Link>
-  </div>
+  </li>
 )
 
 RecipeCard.propTypes = {
