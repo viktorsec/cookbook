@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import PropTypes from "prop-types"
 
 import Layout from "../components/Layout"
 import RecipeCard from "../components/RecipeCard"
@@ -7,14 +8,11 @@ import SEO from "../components/Seo"
 
 import "./index.scss"
 
-
-export default ({ data }) => {
-  console.log(data)
-
+const Index = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <ul class="index-container">
+      <ul className="index-container">
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <RecipeCard
             id={node.id}
@@ -28,6 +26,14 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
+Index.defaultProps = {}
+
+Index.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.node).isRequired,
+}
+
+export default Index
 
 export const query = graphql`
   query {

@@ -4,11 +4,14 @@ import PropTypes from "prop-types"
 import "./Header.scss"
 
 const Header = ({ siteTitle }) => (
-  <header class="header">
-    <div class="container">
-      <h1 class="h1">
+  <header className="header">
+    <div className="container">
+      <h1 className="h1">
         <Link to="/" className="link">
-          🥦 {siteTitle}
+          <span role="img" aria-label="logo">
+            🥦
+          </span>
+          {` ${siteTitle}`}
         </Link>
       </h1>
     </div>

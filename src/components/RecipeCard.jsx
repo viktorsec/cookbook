@@ -6,22 +6,13 @@ import PropTypes from "prop-types"
 import "./RecipeCard.scss"
 
 const RecipeCard = ({ id, slug, title, image, excerpt }) => (
-  <li key={id} class="recipecard-container">
-    <Link
-      to={slug}
-      className="link"
-    >
-      <Img
-        fluid={image.childImageSharp.fluid}
-        alt={title}
-        className="image"
-      />
+  <li key={id} className="recipecard-container">
+    <Link to={slug} className="link">
+      <Img fluid={image.childImageSharp.fluid} alt={title} className="image" />
       <div className="hoverContainer">
         <div className="hoverBody">
-          <h2 class="title">
-            {title}
-          </h2>
-          <p class="text">{excerpt}</p>
+          <h2 className="title">{title}</h2>
+          <p className="text">{excerpt}</p>
         </div>
       </div>
     </Link>
@@ -36,7 +27,6 @@ RecipeCard.propTypes = {
   excerpt: PropTypes.string.isRequired,
 }
 
-RecipeCard.defaultProps = {
-}
+RecipeCard.defaultProps = {}
 
 export default RecipeCard

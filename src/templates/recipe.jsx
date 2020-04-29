@@ -1,9 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import PropTypes from "prop-types"
 import Layout from "../components/Layout"
 
-export default ({ data }) => {
+const Recipe = ({ data }) => {
   const recipe = data.markdownRemark
 
   return (
@@ -19,6 +20,12 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
+Recipe.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.node).isRequired,
+}
+
+export default Recipe
 
 export const query = graphql`
   query($slug: String!) {

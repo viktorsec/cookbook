@@ -1,6 +1,6 @@
 # Cookbook
 
-Personal cookbook.
+A personal cookbook.
 
 ## Development
 
@@ -9,6 +9,8 @@ Personal cookbook.
 3. clone this repo && `cd cookbook`
 4. `yarn`
 5. `yarn develop`
+
+Lint with `yarn lint`.
 
 ## Deployment
 
