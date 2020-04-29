@@ -1,4 +1,5 @@
 @import "../sass/constants.scss";
+
 @import "../sass/typography.scss";
 
 .recipecard-container {
@@ -12,7 +13,7 @@
   position: relative;
 
   &:hover {
-    box-shadow: 0 0 2rem -0.5rem $color-primary-medium;
+    box-shadow: 0 0 2rem -.5rem $color-primary-medium;
   }
 
   .link {
@@ -29,7 +30,7 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, .6);
     position: absolute;
     top: 0;
     height: 100%;

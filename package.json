@@ -30,7 +30,11 @@
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "2.5.0",
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint-config-airbnb": "^0.0.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.17.1"
   },
   "keywords": [
     "gatsby"
@@ -39,8 +43,9 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "lint": "yarn run lint:module",
+    "lint": "yarn run lint:module && yarn run lint:styles",
     "lint:module": "eslint --fix --cache --ext .js,.jsx ./src",
+    "lint:styles": "stylelint 'src/**/*.{css,scss}'",
     "start": "yarn run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
