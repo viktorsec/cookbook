@@ -16,7 +16,7 @@ const Recipe = ({ data }) => {
       <div className="recipe-page">
         <Img className="hero" fluid={fluidImage} alt={title} />
         <div className="content">
-          <h1>{title}</h1>
+          <h2>{title}</h2>
           <ul className="badges">
             {categories &&
               categories.map((category) => (

@@ -13,15 +13,27 @@
     font-family: $font-roboto, serif;
     font-size: 1rem;
 
-    h1 {
-      font-size: 4rem;
+    h2,
+    h3 {
       text-transform: uppercase;
       font-family: $font-oswald, sans-serif;
     }
 
+    h2 {
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    li {
+      margin-bottom: .5rem;
+    }
+
     .badges {
       display: flex;
-      margin: 0;
+      margin: 1rem 0;
 
       .badge {
         text-transform: uppercase;
