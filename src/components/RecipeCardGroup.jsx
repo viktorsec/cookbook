@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
+import cx from "classnames"
 
 import "./RecipeCardGroup.scss"
 
@@ -36,19 +37,28 @@ class RecipeCardGroup extends Component {
     this.setState({ filter })
   }
 
+  renderFilterButton = (item) => {
+    const { filter } = this.state
+    const classNames = cx("badge", item === filter && "badge-active")
+
+    return (
+      <button
+        type="button"
+        key={item}
+        className={classNames}
+        onClick={() => this.handleFiterClick(item)}
+      >
+        {item}
+      </button>
+    )
+  }
+
   renderFilterControl = () => {
     return (
       <div className="filter-control">
-        {Object.keys(FILTER).map((item) => (
-          <button
-            type="button"
-            key={item}
-            className="badge"
-            onClick={() => this.handleFiterClick(FILTER[item])}
-          >
-            {FILTER[item]}
-          </button>
-        ))}
+        {Object.keys(FILTER).map((item) =>
+          this.renderFilterButton(FILTER[item]),
+        )}
       </div>
     )
   }

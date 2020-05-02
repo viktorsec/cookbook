@@ -42,6 +42,11 @@ body {
 
 // RESET
 
+button:focus {
+  outline: 0;
+  border: 1px solid black !important;
+}
+
 html {
   height: 100%;
   font-family: sans-serif;

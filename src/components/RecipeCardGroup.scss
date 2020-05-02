@@ -21,9 +21,11 @@
     border: 1px solid $color-secondary-dark;
     border-radius: 6px;
     cursor: pointer;
+  }
 
-    &:hover {
-      background-color: $color-secondary-dark;
-    }
+  .badge-active {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
   }
 }
