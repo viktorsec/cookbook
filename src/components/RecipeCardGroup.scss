@@ -1,5 +1,29 @@
+@import "../sass/constants.scss";
+
+@import "../sass/typography.scss";
+
 .recipe-card-group-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.filter-control {
+  display: flex;
+  justify-content: center;
+
+  .badge {
+    width: 4rem;
+    margin: 0 2px;
+    font-family: $font-oswald, sans-serif;
+    text-transform: uppercase;
+    background-color: $color-secondary-light;
+    border: 1px solid $color-secondary-dark;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-secondary-dark;
+    }
+  }
 }

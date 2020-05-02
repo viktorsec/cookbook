@@ -8,10 +8,7 @@ const Header = ({ siteTitle }) => (
     <div className="container">
       <h1 className="h1">
         <Link to="/" className="link">
-          <span role="img" aria-label="logo">
-            🥦
-          </span>
-          {` ${siteTitle}`}
+          {siteTitle}
         </Link>
       </h1>
     </div>

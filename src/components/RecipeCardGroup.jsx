@@ -38,11 +38,12 @@ class RecipeCardGroup extends Component {
 
   renderFilterControl = () => {
     return (
-      <div>
+      <div className="filter-control">
         {Object.keys(FILTER).map((item) => (
           <button
             type="button"
             key={item}
+            className="badge"
             onClick={() => this.handleFiterClick(FILTER[item])}
           >
             {FILTER[item]}
