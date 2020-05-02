@@ -3,16 +3,15 @@ import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 
 import Layout from "../components/Layout"
+import RecipeCardGroup from "../components/RecipeCardGroup"
 import RecipeCard from "../components/RecipeCard"
 import SEO from "../components/Seo"
-
-import "./index.scss"
 
 const Index = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <ul className="index-container">
+      <RecipeCardGroup>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <RecipeCard
             id={node.id}
@@ -24,7 +23,7 @@ const Index = ({ data }) => {
             excerpt={node.excerpt}
           />
         ))}
-      </ul>
+      </RecipeCardGroup>
     </Layout>
   )
 }
