@@ -17,4 +17,4 @@ S touto obdobou Boršču som sa zoznámil v Pobaltí.
 ### Postup
 Uvar cviklu. Pokiaľ si si kúpil už uvarenú, môžeš oslavovať. Nakrájaj ju na kocky a hoď do hrnca. Umy kuchyňu od cviklovej šťavy. Ak chceš použiť aj uhorku, ošúp ju a nakrájaj do hrnca. Zalej cviklu kefírom/acidkom. Sleduj ako sa v ňom rozpíja fialová šťava.
 
-Prilej trochu studenej vody (menej než kefíru). Nakrájaj do jedla kôpor. Pomiešaj. Servíruj vychladené.
+Prilej trochu studenej vody (menej než kefíru). Nakrájaj do jedla kôpor. Pomiešaj. Servíruj vychladené. Môžeš ozdobiť bielym jogurtom.
