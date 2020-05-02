@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 
 import "./RecipeCard.scss"
 
-const RecipeCard = ({ id, slug, title, image, excerpt }) => (
+const RecipeCard = ({ id, slug, title, image, excerpt, categories }) => (
   <li key={id} className="recipecard-container">
     <Link to={slug} className="link">
       <Img fluid={image.childImageSharp.fluid} alt={title} className="image" />
@@ -13,6 +13,12 @@ const RecipeCard = ({ id, slug, title, image, excerpt }) => (
         <div className="hoverBody">
           <h2 className="title">{title}</h2>
           <p className="text">{excerpt}</p>
+          {categories &&
+            categories.map((category) => (
+              <span key={category} className="category">
+                {category}
+              </span>
+            ))}
         </div>
       </div>
     </Link>
@@ -21,12 +27,16 @@ const RecipeCard = ({ id, slug, title, image, excerpt }) => (
 
 RecipeCard.propTypes = {
   id: PropTypes.string.isRequired,
+  categories: PropTypes.arrayOf(PropTypes.string),
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  image: PropTypes.node.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  image: PropTypes.object.isRequired,
   excerpt: PropTypes.string.isRequired,
 }
 
-RecipeCard.defaultProps = {}
+RecipeCard.defaultProps = {
+  categories: [],
+}
 
 export default RecipeCard

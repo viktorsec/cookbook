@@ -6,15 +6,15 @@ import Layout from "../components/Layout"
 
 const Recipe = ({ data }) => {
   const recipe = data.markdownRemark
+  const { title, categories } = recipe.frontmatter
+  const { fluid: fluidImage } = recipe.frontmatter.image.childImageSharp
 
   return (
     <Layout>
       <div>
-        <Img
-          fluid={recipe.frontmatter.image.childImageSharp.fluid}
-          alt={recipe.frontmatter.title}
-        />
-        <h1>{recipe.frontmatter.title}</h1>
+        <Img fluid={fluidImage} alt={title} />
+        <h1>{title}</h1>
+        {categories && categories.map((category) => <p>{category}</p>)}
         <div dangerouslySetInnerHTML={{ __html: recipe.html }} />
       </div>
     </Layout>
@@ -40,6 +40,7 @@ export const query = graphql`
             }
           }
         }
+        categories
       }
     }
   }

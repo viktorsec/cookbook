@@ -16,8 +16,10 @@ const Index = ({ data }) => {
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <RecipeCard
             id={node.id}
+            key={node.id}
             slug={node.fields.slug}
             title={node.frontmatter.title}
+            categories={node.frontmatter.categories}
             image={node.frontmatter.image}
             excerpt={node.excerpt}
           />
@@ -30,7 +32,8 @@ const Index = ({ data }) => {
 Index.defaultProps = {}
 
 Index.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.node).isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  data: PropTypes.object.isRequired,
 }
 
 export default Index
@@ -52,6 +55,7 @@ export const query = graphql`
                 }
               }
             }
+            categories
           }
           fields {
             slug
