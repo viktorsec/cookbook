@@ -1,3 +1,5 @@
+@import "../sass/constants.scss";
+
 @import "../sass/typography.scss";
 
 .recipe-page {
@@ -9,7 +11,7 @@
   }
 
   .content {
-    padding: 3rem;
+    padding: $margin-sides;
     font-family: $font-roboto, serif;
     font-size: 1rem;
 

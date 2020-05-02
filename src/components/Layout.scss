@@ -17,15 +17,16 @@
 
   .footer {
     flex-shrink: 0;
-    padding: .5rem 1rem;
+    padding: .5rem $margin-sides;
     font-family: $font-roboto, sans-serif;
     color: $color-primary-dark;
 
     a {
-      color: $color-primary-light;
+      color: black;
 
       &:hover {
-        background-color: lime;
+        background-color: black;
+        color: white;
       }
     }
   }
@@ -35,10 +36,12 @@ body {
   height: 100%;
 }
 
+// stylelint-disable selector-max-id
 #___gatsby,
 #gatsby-focus-wrapper {
   height: 100%;
 }
+// stylelint-enable selector-max-id
 
 // RESET
 
