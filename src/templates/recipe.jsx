@@ -4,6 +4,8 @@ import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import Layout from "../components/Layout"
 
+import "./recipe.scss"
+
 const Recipe = ({ data }) => {
   const recipe = data.markdownRemark
   const { title, categories } = recipe.frontmatter
@@ -11,8 +13,8 @@ const Recipe = ({ data }) => {
 
   return (
     <Layout>
-      <div>
-        <Img fluid={fluidImage} alt={title} />
+      <div className="recipe-page">
+        <Img className="hero" fluid={fluidImage} alt={title} />
         <h1>{title}</h1>
         {categories && categories.map((category) => <p>{category}</p>)}
         <div dangerouslySetInnerHTML={{ __html: recipe.html }} />

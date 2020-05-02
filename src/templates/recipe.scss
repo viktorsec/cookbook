@@ -1,0 +1,17 @@
+@import "../sass/typography.scss";
+
+.recipe-page {
+  background-color: black;
+  height: 100%;
+
+  .hero {
+    height: 25rem;
+  }
+
+  h1 {
+    padding: 3rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: $font-oswald, sans-serif;
+  }
+}

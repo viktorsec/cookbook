@@ -24,20 +24,18 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="layout-wrapper">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="layout-wrapper">
-        <main className="page">{children}</main>
-        <footer className="footer">
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>,{` `}
-          tracked on <a href="https://github.com/viktorsec/cookbook">GitHub</a>,
-          {` `}
-          deployed by <a href="https://zeit.co/">ZEIT</a>.
-        </footer>
-      </div>
-    </>
+      <main className="page">{children}</main>
+      <footer className="footer">
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>,{` `}
+        tracked on <a href="https://github.com/viktorsec/cookbook">GitHub</a>,
+        {` `}
+        deployed by <a href="https://zeit.co/">ZEIT</a>.
+      </footer>
+    </div>
   )
 }
 
