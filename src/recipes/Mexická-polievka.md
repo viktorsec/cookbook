@@ -17,6 +17,7 @@ Túto zeleninovú polievku robievali v Taco Rey.
 - paradajky
 - citrónová šťava / kyselina citrónová
 - cheddar
+- nakladané jalapeños
 - chilli
 - zeleninový bujón
 - soľ
@@ -25,6 +26,6 @@ Túto zeleninovú polievku robievali v Taco Rey.
 - kyslá smotana _(optional)_
 
 ### Postup
-Daj do hrncu olej a opraž trochu cibule. Pridaj konzervu fazule, trochu vody, kukuricu a paradajky. Tie môžeš nahradiť pretlakom. Ochuť cesnakom, chilli, škoricou, citrónovou šťavou a soľou. Nakrájaj stonkový celer. Trochu to povar a potom prihoď kukuricu. Nalej do poháru vriacu vodu a rozmiešaj v ňom zeleninový bujón. Vylej ho do polievky.
+Daj do hrncu olej a opraž trochu cibule. Pridaj konzervu fazule, trochu vody, kukuricu, jalapeños a paradajky. Tie môžeš nahradiť pretlakom. Ochuť cesnakom, chilli, škoricou, citrónovou šťavou a soľou. Nakrájaj stonkový celer. Trochu to povar a potom prihoď kukuricu. Nalej do poháru vriacu vodu a rozmiešaj v ňom zeleninový bujón. Vylej ho do polievky.
 
 Servíruj hojne posypané strúhaným cheddarom a s lyžicou kyslej smotany. Ja si zvyknem priliať citrónovú šťavu aj na tanieri.
