@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import Layout from "../components/Layout"
+import SEO from "../components/Seo"
 
 import "./recipe.scss"
 
@@ -13,6 +14,7 @@ const Recipe = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={title} />
       <div className="recipe-page">
         <Img className="hero" fluid={fluidImage} alt={title} />
         <div className="content">
