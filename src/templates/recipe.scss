@@ -8,10 +8,29 @@
     height: 25rem;
   }
 
-  h1 {
+  .content {
     padding: 3rem;
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-family: $font-oswald, sans-serif;
+    font-family: $font-roboto, serif;
+    font-size: 1rem;
+
+    h1 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      font-family: $font-oswald, sans-serif;
+    }
+
+    .badges {
+      display: flex;
+      margin: 0;
+
+      .badge {
+        text-transform: uppercase;
+        border: 1px solid white;
+        border-radius: 6px;
+        margin-right: .5rem;
+        padding: .2rem 1rem;
+        list-style-type: none;
+      }
+    }
   }
 }

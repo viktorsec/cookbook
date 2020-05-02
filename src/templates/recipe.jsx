@@ -15,9 +15,16 @@ const Recipe = ({ data }) => {
     <Layout>
       <div className="recipe-page">
         <Img className="hero" fluid={fluidImage} alt={title} />
-        <h1>{title}</h1>
-        {categories && categories.map((category) => <p>{category}</p>)}
-        <div dangerouslySetInnerHTML={{ __html: recipe.html }} />
+        <div className="content">
+          <h1>{title}</h1>
+          <ul className="badges">
+            {categories &&
+              categories.map((category) => (
+                <li className="badge">{category}</li>
+              ))}
+          </ul>
+          <div dangerouslySetInnerHTML={{ __html: recipe.html }} />
+        </div>
       </div>
     </Layout>
   )
