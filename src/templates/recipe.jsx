@@ -22,7 +22,9 @@ const Recipe = ({ data }) => {
           <ul className="badges">
             {categories &&
               categories.map((category) => (
-                <li className="badge">{category}</li>
+                <li className="badge" key={category}>
+                  {category}
+                </li>
               ))}
           </ul>
           <div dangerouslySetInnerHTML={{ __html: recipe.html }} />
@@ -33,7 +35,8 @@ const Recipe = ({ data }) => {
 }
 
 Recipe.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.node).isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  data: PropTypes.PropTypes.object.isRequired,
 }
 
 export default Recipe

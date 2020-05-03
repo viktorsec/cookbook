@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
-import cx from "classnames"
+import FilterButton from "./FilterButton"
 
 import "./RecipeCardGroup.scss"
 
@@ -33,23 +33,21 @@ class RecipeCardGroup extends Component {
     return cards
   }
 
-  handleFiterClick = (filter) => {
+  handleFilterClick = (filter) => {
     this.setState({ filter })
   }
 
   renderFilterButton = (item) => {
     const { filter } = this.state
-    const classNames = cx("badge", item === filter && "badge-active")
+    const isPressed = item === filter
 
     return (
-      <button
-        type="button"
+      <FilterButton
+        item={item}
         key={item}
-        className={classNames}
-        onClick={() => this.handleFiterClick(item)}
-      >
-        {item}
-      </button>
+        isPressed={isPressed}
+        onClick={this.handleFilterClick}
+      />
     )
   }
 
