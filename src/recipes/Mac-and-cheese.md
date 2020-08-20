@@ -17,7 +17,7 @@ categories:
 - strúhanka _(optional)_
 
 ### Postup
-Daj predhriať rúru a nasledovné úlohy môžeš paralizovať.
+Daj predhriať rúru a nasledovné úlohy môžeš paralelizovať.
 
 A. Uvar makaróny a makarónmi teraz myslíme _gomiti_, prípadne _maccheroni_, nie _bucatini_, či _rigatoni_. Každopádne uvar ich len _molto al dente_, čiže len trochu. A potom ich sceď.
 
