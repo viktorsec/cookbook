@@ -27,6 +27,7 @@ const Recipe = ({ data }) => {
                 </li>
               ))}
           </ul>
+          {/* eslint-disable-next-line react/no-danger */}
           <div dangerouslySetInnerHTML={{ __html: recipe.html }} />
         </div>
       </div>

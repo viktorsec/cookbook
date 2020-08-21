@@ -9,7 +9,7 @@ categories:
 
 Je celkom na pováženie, či toto vôbec označovať za recept. Šaláty takéhoto štýlu som si zvykol večerať, keď som sa snažil znížiť svoju spotrebu mäsa.
 
-Ukončil to COVID, ktorý ma donútil presedlať na trvanlivejšie potraviny.
+Ukončil to COVID-19, ktorý ma donútil presedlať na trvanlivejšie potraviny.
 
 ### Suroviny
 - zelené
